@@ -2,11 +2,20 @@
   "name": "movie--app",
   "version": "1.0.0",
   "scripts": {
-    "dev" : "parcel ./index.html",
-		"build" : "parcel build ./index.html"
+    "dev": "parcel ./index.html",
+    "build": "parcel build ./index.html",
+    "vercel": "vercel dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "dotenv": "^17.2.1",
+    "parcel": "^2.15.4",
+    "vercel": "^45.0.9"
+  },
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
 }
