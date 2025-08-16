@@ -1,24 +1,24 @@
 {
 	"type": "module",
-  "name": "movie--app",
-  "version": "1.0.0",
-  "scripts": {
-    "dev": "parcel ./index.html",
-    "build": "parcel build ./index.html",
-    "vercel": "vercel dev"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@types/node-fetch": "^2.6.13",
-    "dotenv": "^17.2.1",
-    "parcel": "^2.15.4",
-    "typescript": "^5.9.2",
-    "vercel": "^45.0.9"
-  },
-  "dependencies": {
-    "node-fetch": "^2.7.0"
-  }
+	"name": "movie--app",
+	"version": "1.0.0",
+	"scripts": {
+		"dev": "parcel ./index.html",
+		"build": "parcel build ./index.html",
+		"vercel": "vercel dev"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"dotenv": "^17.2.1",
+		"parcel": "^2.15.4",
+		"typescript": "^5.9.2",
+		"vercel": "^46.0.1"
+	},
+	"dependencies": {
+		"node-fetch": "^3.3.2",
+		"openai": "^5.12.2"
+	}
 }

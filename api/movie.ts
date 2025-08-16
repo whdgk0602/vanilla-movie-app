@@ -1,15 +1,15 @@
 // api/movie.ts
 import { VercelRequest, VercelResponse } from '@vercel/node'
 
-const { APIKEY } = process.env
+const { OMDB_APIKEY } = process.env
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   try {
     const { title, page, id } = JSON.parse(req.body as string)
 
     const url = id
-      ? `https://omdbapi.com?apikey=${APIKEY}&i=${id}&plot=full`
-      : `https://omdbapi.com?apikey=${APIKEY}&s=${title}&page=${page}`
+      ? `https://omdbapi.com?apikey=${OMDB_APIKEY}&i=${id}&plot=full`
+      : `https://omdbapi.com?apikey=${OMDB_APIKEY}&s=${title}&page=${page}`
 
     const response = await fetch(url)
     const json = await response.json()
